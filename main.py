@@ -1,8 +1,21 @@
 import os
+import sys
 from flask import Flask, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 from supabase import create_client, Client
+
+# Add the current directory to the path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Import the app from src/main.py
+from src.main import app
+
+# This is needed for Gunicorn to find the app
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
+
 
 # Load environment variables
 load_dotenv()
