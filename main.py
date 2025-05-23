@@ -10,7 +10,7 @@ load_dotenv()
 # Get Supabase credentials
 SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://klxiwfahaqwxwgmquipl.supabase.co')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtseGl3ZmFoYXF3eHdnbXF1aXBsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc4OTc0MDEsImV4cCI6MjA2MzQ3MzQwMX0.ye22o2HYX_8qtWTfUFU8RpUeb1S_vC8BoXZsJ-43wyI')
-SECRET_KEY = os.getenv('SECRET_KEY', 'development-secret-key')
+SECRET_KEY = os.getenv('SECRET_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtseGl3ZmFoYXF3eHdnbXF1aXBsIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0Nzg5NzQwMSwiZXhwIjoyMDYzNDczNDAxfQ.R-pwKK27FNBuXYqooSjc50pAW17jNRef0r009ewf8aA')
 
 # Initialize Flask app
 app = Flask(__name__)
